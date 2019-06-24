@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="canva"></canvas>
+<script type="text/javascript">
+	let c=document.querySelector("#canva").getContext("2d");
+	c.strokeStyle="red";
+	c.strokeRect(0,0,50,50);
+	c.stroke();
+	c.save();
+
+	c.beginPath();
+	c.strokeStyle="green";
+	c.strokeRect(50,50,50,50);
+	c.stroke();
+	
+	c.beginPath();
+	c.strokeStyle="purple";
+	c.strokeRect(100,100,50,50);
+	c.stroke();
+	
+</script>
+</body>
+</html>
