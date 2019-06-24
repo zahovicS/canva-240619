@@ -2,11 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		canvas{
+			border: 1px solid black;
+		}
+	</style>
 </head>
 <body>
 <canvas id="canva"></canvas>
 <script type="text/javascript">
 	let c=document.querySelector("#canva").getContext("2d");
+	document.querySelector("#canva").height=300;
 	c.strokeStyle="red";
 	c.strokeRect(0,0,50,50);
 	c.stroke();
